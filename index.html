@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>Enigmas do Futuro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span> ENIGMAS</div>
+      <div class="status"><span class="status-dot"></span> SISTEMA ONLINE</div>
+    </header>
+
+    <section class="screen active" id="intro">
+      <div class="eyebrow">EXPERIÊNCIA INTERATIVA • 2089</div>
+      <div class="hero-symbol">⌬</div>
+      <h1>O FUTURO<br><span>PRECISA DE VOCÊ.</span></h1>
+      <p class="lead">Uma inteligência desconhecida bloqueou o acesso ao sistema central. Resolva 3 enigmas para restaurar a conexão com o futuro.</p>
+      <div class="mission-meta">
+        <div><strong>05</strong><small>ENIGMAS</small></div>
+        <div><strong>90s</strong><small>TEMPO MÉDIO</small></div>
+        <div><strong>01</strong><small>MISSÃO</small></div>
+      </div>
+      <button class="primary-btn" id="startBtn">INICIAR MISSÃO <span>↗</span></button>
+      <p class="hint">Não precisa correr. Pense, escolha e descubra.</p>
+    </section>
+
+    <section class="screen" id="game">
+      <div class="game-head">
+        <div><div class="eyebrow">MISSÃO EM ANDAMENTO</div><h2>Desbloqueie o sistema</h2></div>
+        <div class="timer-wrap"><span class="timer-label">TEMPO</span><strong id="timer">01:30</strong></div>
+      </div>
+      <div class="progress-row">
+        <div class="progress-track"><div id="progressFill"></div></div>
+        <span id="progressText">01 / 05</span>
+      </div>
+      <div class="puzzle-card">
+        <div class="puzzle-top"><span id="puzzleTag">ARQUIVO 01</span><span class="lock-icon">⌑</span></div>
+        <div class="puzzle-icon" id="puzzleIcon">◈</div>
+        <h3 id="question">Carregando enigma...</h3>
+        <p class="puzzle-note" id="puzzleNote">Selecione a resposta correta para avançar.</p>
+        <div class="answers" id="answers"></div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+      </div>
+      <button class="text-btn" id="quitBtn">SAIR DA MISSÃO</button>
+    </section>
+
+    <section class="screen" id="result">
+      <div class="eyebrow">RELATÓRIO FINAL</div>
+      <div class="result-symbol" id="resultSymbol">✧</div>
+      <h1 id="resultTitle">MISSÃO CONCLUÍDA</h1>
+      <p class="lead" id="resultMessage"></p>
+      <div class="score-panel">
+        <div><strong id="score">3/3</strong><small>ACERTOS</small></div>
+        <div><strong id="timeUsed">00:00</strong><small>TEMPO</small></div>
+      </div>
+      <button class="primary-btn" id="againBtn">JOGAR NOVAMENTE <span>↻</span></button>
+      <p class="hint">Obrigado por participar da experiência Enigmas do Futuro.</p>
+    </section>
+    <footer>FEIRA DE CIÊNCIAS & TECNOLOGIA <span>•</span> PROJETO ENIGMAS DO FUTURO</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
